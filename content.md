@@ -291,7 +291,7 @@ In the Storage account blade, select the Access keys option.
 
 
 ### Select the View connection string option
-In the Access keys blade, locate a key that you wish to use. For the access key you selected, click the three ellipsis \)...) button to the right of the key. Once clicked, select the View connection string option.
+In the Access keys blade, locate a key that you wish to use. For the access key you selected, click the Copy button to the right of the Connection String field. If prompted, click the Allow Access button to allow access to the clipboard.
 
 #### :bulb: KNOWLEDGE
 Note: you can use any of the keys listed for this lab.
@@ -299,23 +299,6 @@ Note: you can use any of the keys listed for this lab.
 #### :camera: SCREENSHOT
 >LODSProperties
 >* Uri = screens/666577.jpg
-
-
-
-
-
-### Copy your connection string
-In the View connection string dialog, copy your connection string for the access key you selected
-
-#### :bulb: KNOWLEDGE
-Note: This connection string will be used in various parts of this lab.
-
-#### :camera: SCREENSHOT
->LODSProperties
->* Uri = screens/666578.jpg
-
-
-
 
 
 ### Paste to Notepad
@@ -412,7 +395,7 @@ Verify upload successful. Close Visual Studio.
 
 
 ### Access file via Internet Explorer
-Switch to the Internet Explorer window. In a new tab, type the following URL by replacing \[storage account\] with the name of your storage account:  
+Switch to the Internet Explorer window. In a new tab, type the following URL by replacing \[\*storage account\*\] with the name of your storage account:  
 https://\[\*storage account\*\].blob.core.windows.net/example/samplefile.txt  
 Verify that the text This is your sample file! displays in the browser.
 
@@ -775,7 +758,7 @@ Stream blobStream = await blob.OpenReadAsync();
 ```
 
 
-### reate a new instance of the DownloadPayload class:
+### Create a new instance of the DownloadPayload class:
 At the end of the GetStream method and before the closing brace, create a new instance of the DownloadPayload class:  
 DownloadPayload payload = new DownloadPayload\));
 
@@ -919,8 +902,7 @@ In the Solution Explorer pane, right-click the Contoso.Events solution, and then
 
 
 ### Select the Multiple startup projects option
-Navigate to the Startup Project section located under the Common Properties header. In the Startup Project section, locate and select the Multiple startup projects option.   
-Within the Multiple startup projects table, perform the following actions:  
+Navigate to the Startup Project section located under the Common Properties header. In the Startup Project section, locate and select the Multiple startup projects option. Within the Multiple startup projects table, perform the following actions:  
 a. Locate the Contoso.Events.Web entry and change it's Action from None to Start.  
 b. Locate the Contoso.Events.Management entry and change it's Action from None to Start.  
 c. Locate the Contoso.Events.Worker entry and change it's Action from None to Start.  
